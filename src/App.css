@@ -1,39 +1,107 @@
-.App {
-  text-align: center;
+main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+	padding: 1rem;
+	min-height: 50vh;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 1rem;
+	border: 1px solid darkslateblue;
+	border-radius: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.add-todo-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type="text"] {
+	width: 60%;
+	padding: 0.5rem 0.5rem;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+	border: 1px solid gray;
+	outline: none;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+button {
+	padding: 0.5rem 0.5rem;
+	border-radius: 0.5rem;
+	border: 0px;
+	font-size: 1rem;
+	color: white;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+button:hover {
+	cursor: pointer;
 }
+
+.todo-list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.todo-item {
+	padding: 0.5rem;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.todo-item > div > span {
+	font-size: 1rem;
+}
+
+.completed-todo-text {
+	text-decoration: line-through;
+}
+
+.edit-todo-container {
+	padding: 0.5rem;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.add-todo-button {
+	background-color: seagreen;
+}
+
+.edit-todo-button {
+	background-color: steelblue;
+	margin-right: 0.25rem;
+}
+
+.select-todo-button {
+	background-color: lightskyblue;
+	margin-right: 0.25rem;
+}
+
+.delete-todo-button {
+	background-color: crimson;
+}
+
+.cancel-todo-button {
+	background-color: gray;
+}
+
